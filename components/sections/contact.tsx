@@ -218,7 +218,7 @@ export function Contact() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="group flex items-center gap-3 text-base font-semibold text-gray-900 hover:text-blue-600 transition-colors disabled:opacity-50"
+                    className="group flex items-center gap-3 px-7 py-3.5 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 disabled:opacity-50"
                   >
                     {status === "loading" ? (
                       <>
@@ -228,9 +228,7 @@ export function Contact() {
                     ) : (
                       <>
                         Mesaj göndər
-                        <span className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 group-hover:border-blue-300 group-hover:bg-blue-50 transition-all">
-                          <ArrowRight size={16} />
-                        </span>
+                        <ArrowRight size={16} />
                       </>
                     )}
                   </button>

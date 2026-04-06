@@ -40,7 +40,7 @@ export function Process() {
               className="relative"
             >
               {/* Step number */}
-              <span className="text-6xl sm:text-7xl font-bold text-gray-100 leading-none select-none">
+              <span className="text-6xl sm:text-7xl font-bold leading-none select-none bg-gradient-to-br from-blue-100 to-cyan-100 bg-clip-text text-transparent">
                 {step.step}
               </span>
               <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-3">

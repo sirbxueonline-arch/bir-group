@@ -18,7 +18,7 @@ export function Hero() {
           initial={{ opacity: 0, width: 0 }}
           animate={{ opacity: 1, width: "100%" }}
           transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="h-px bg-gradient-to-r from-gray-200 via-gray-300 to-transparent mb-12 sm:mb-16 max-w-md"
+          className="h-px bg-gradient-to-r from-blue-400 via-cyan-400 to-transparent mb-12 sm:mb-16 max-w-md"
         />
 
         {/* Main headline */}
@@ -47,7 +47,7 @@ export function Hero() {
             initial={{ y: 120, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[clamp(3rem,8vw,7.5rem)] leading-[0.92] tracking-[-0.04em] text-gray-300 italic font-light"
+            className="text-[clamp(3rem,8vw,7.5rem)] leading-[0.92] tracking-[-0.04em] bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent italic font-light"
           >
             fərqləndiririk.
           </motion.h1>
@@ -74,14 +74,14 @@ export function Hero() {
               <motion.span
                 animate={{ y: [0, 4, 0] }}
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 group-hover:border-gray-400 transition-colors"
+                className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 group-hover:border-blue-300 group-hover:bg-blue-50 transition-all"
               >
                 <ArrowDown size={15} />
               </motion.span>
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 text-sm font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors"
+              className="px-6 py-3 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
             >
               Layihəyə başla
             </a>

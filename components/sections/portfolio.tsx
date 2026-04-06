@@ -40,7 +40,7 @@ export function Portfolio() {
                 duration: 0.5,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className={`group bg-white rounded-2xl border border-gray-100 hover:border-gray-200 hover:shadow-lg hover:shadow-gray-100/80 transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between ${
+              className={`group bg-white rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-50 transition-all duration-300 p-6 sm:p-8 flex flex-col justify-between ${
                 i === 0 ? "md:col-span-2" : ""
               }`}
             >
@@ -49,7 +49,7 @@ export function Portfolio() {
                   <p className="text-xs text-gray-400 tracking-wide uppercase">
                     {project.category}
                   </p>
-                  <div className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center flex-shrink-0 group-hover:bg-gray-900 group-hover:border-gray-900 transition-all duration-200">
+                  <div className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-blue-600 group-hover:to-cyan-500 group-hover:border-transparent transition-all duration-200">
                     <ArrowUpRight
                       size={14}
                       className="text-gray-400 group-hover:text-white transition-colors duration-200"

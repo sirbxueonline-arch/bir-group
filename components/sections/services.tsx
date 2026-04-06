@@ -48,7 +48,7 @@ export function Services() {
               <div className="sm:col-span-3 flex items-center gap-3">
                 <service.icon
                   size={20}
-                  className="text-gray-400 group-hover:text-gray-900 transition-colors duration-300 flex-shrink-0"
+                  className="text-blue-500 group-hover:text-cyan-500 transition-colors duration-300 flex-shrink-0"
                 />
                 <h3 className="text-lg font-semibold text-gray-900">
                   {service.title}

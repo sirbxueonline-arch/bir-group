@@ -30,7 +30,7 @@ function StatItem({
       }}
       className="text-center sm:text-left"
     >
-      <div className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight tabular-nums">
+      <div className="text-4xl sm:text-5xl font-bold tracking-tight tabular-nums bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
         {count}
         {suffix}
       </div>

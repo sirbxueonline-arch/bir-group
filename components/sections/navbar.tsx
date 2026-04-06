@@ -56,7 +56,7 @@ export function Navbar() {
             <div className="hidden md:block">
               <a
                 href="#contact"
-                className="px-5 py-2.5 text-sm font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors"
+                className="px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
               >
                 Layihəyə başla
               </a>
@@ -98,7 +98,7 @@ export function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-8 w-full text-center px-6 py-4 text-base font-medium text-white bg-gray-900 rounded-full"
+                className="mt-8 w-full text-center px-6 py-4 text-base font-medium text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full"
               >
                 Layihəyə başla
               </a>
