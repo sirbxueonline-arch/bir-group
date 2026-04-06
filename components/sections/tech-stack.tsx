@@ -46,7 +46,7 @@ const technologies = [
   {
     name: "Shopify",
     category: "E-Commerce",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/shopify/shopify-original.svg",
+    logo: "https://cdn.simpleicons.org/shopify/7AB55C",
   },
   {
     name: "WordPress",
