@@ -1,66 +1,65 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans } from "next/font/google";
+import { Big_Shoulders_Display, Manrope, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const syne = Syne({
-  variable: "--font-syne",
+const bigShoulders = Big_Shoulders_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["800", "900"],
+  variable: "--font-big-shoulders",
+  display: "swap",
 });
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "600"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-jetbrains",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Birclick Group — Veb İnkişaf Agentliyi | Azərbaycan",
+  title: "birclick.az — Veb & Mobil Tətbiq Agentliyi | Bakı",
   description:
-    "Konversiya edən rəqəmsal təcrübələr yaradırıq. Azərbaycanda yerləşən premium veb dizayn və inkişaf agentliyi, böyüyən bizneslər üçün müasir veb-saytlar və veb tətbiqlər hazırlayır.",
+    "Bir klik. Sonsuz imkan. Azərbaycanın aparıcı veb dizayn, mobil tətbiq və rəqəmsal həllər agentliyi.",
   keywords: [
-    "veb inkişaf",
+    "web design baku",
+    "mobile app azerbaijan",
+    "birclick",
     "veb dizayn",
-    "Azərbaycan",
-    "rəqəmsal agentlik",
-    "Birclick Group",
-    "UI/UX",
-    "e-ticarət",
-    "web development Azerbaijan",
+    "mobil tətbiq",
   ],
   openGraph: {
-    title: "Birclick Group — Konversiya Edən Rəqəmsal Təcrübələr Yaradırıq",
-    description:
-      "Azərbaycanda yerləşən premium veb inkişaf agentliyi. Bizneslərin böyüməsinə kömək edən müasir, yüksək performanslı veb-saytlar hazırlayırıq.",
-    url: "https://birclick.group",
-    siteName: "Birclick Group",
-    type: "website",
+    title: "birclick.az — Bir klik. Sonsuz imkan.",
+    description: "Azərbaycanın aparıcı rəqəmsal həllər agentliyi.",
+    url: "https://birclick.az",
+    siteName: "birclick.az",
     locale: "az_AZ",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Birclick Group — Veb İnkişaf Agentliyi",
-    description:
-      "Azərbaycanda yerləşən premium veb inkişaf agentliyi. Bizneslərin böyüməsinə kömək edən müasir, yüksək performanslı veb-saytlar hazırlayırıq.",
-  },
-  robots: {
-    index: true,
-    follow: true,
+    type: "website",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="az"
-      className={`${syne.variable} ${dmSans.variable} h-full antialiased scroll-smooth`}
+      className={`${bigShoulders.variable} ${manrope.variable} ${jetbrains.variable}`}
     >
-      <body className="min-h-full flex flex-col bg-white text-gray-900 font-sans selection:bg-blue-100 selection:text-blue-900">
+      <body className="font-body bg-cream text-ink">
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,39 +1,23 @@
-"use client";
-
-import { Navbar } from "@/components/sections/navbar";
-import { LoadingScreen } from "@/components/sections/loading-screen";
-import { Hero } from "@/components/sections/hero";
-import { Marquee } from "@/components/sections/marquee";
-import { Services } from "@/components/sections/services";
-import { Portfolio } from "@/components/sections/portfolio";
-import { Stats } from "@/components/sections/stats";
-import { TechStack } from "@/components/sections/tech-stack";
-import { Process } from "@/components/sections/process";
-import { Testimonials } from "@/components/sections/testimonials";
-import { Faq } from "@/components/sections/faq";
-import { Contact } from "@/components/sections/contact";
-import { Footer } from "@/components/sections/footer";
-import { WhatsAppButton } from "@/components/sections/whatsapp-button";
+import Hero from "@/components/Hero";
+import Marquee from "@/components/Marquee";
+import Services from "@/components/Services";
+import Portfolio from "@/components/Portfolio";
+import Process from "@/components/Process";
+import CTA from "@/components/CTA";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export default function Home() {
   return (
     <>
       <LoadingScreen />
-      <Navbar />
       <main>
         <Hero />
         <Marquee />
         <Services />
         <Portfolio />
-        <Stats />
-        <TechStack />
         <Process />
-        <Testimonials />
-        <Faq />
-        <Contact />
+        <CTA />
       </main>
-      <Footer />
-      <WhatsAppButton />
     </>
   );
 }
