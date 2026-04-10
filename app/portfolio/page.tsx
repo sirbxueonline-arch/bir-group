@@ -85,10 +85,13 @@ export default function PortfolioPage() {
             viewport={{ once: true, margin: "-50px" }}
           >
             {projects.map((p) => (
-              <motion.div
+              <motion.a
                 key={p.title}
+                href={`https://${p.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 variants={cardVariants}
-                className={`group rounded-2xl border bg-white p-7 transition-all duration-300 ${p.borderColor} ${p.bgHover} hover:shadow-lg`}
+                className={`group block rounded-2xl border bg-white p-7 transition-all duration-300 ${p.borderColor} ${p.bgHover} hover:shadow-lg hover:-translate-y-1`}
               >
                 <div className="flex items-start justify-between">
                   <span
@@ -120,7 +123,7 @@ export default function PortfolioPage() {
                     {p.url}
                   </span>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </motion.div>
 
